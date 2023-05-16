@@ -1,0 +1,23 @@
+/* Created by: Remy Skelton
+* Created on: Mar 2023
+* This CSS file defines the style for index.html
+* ICS2O-Unit5-01-HTML-NumberDisplay 
+*/
+
+body {
+	background-color: #84d5f0;
+}
+
+h2 {
+	background-color: rgb(145, 143, 255);
+	color: hsl(0, 100%, 30%);
+	padding: 40px;
+	text-align: center;
+}
+
+H5 {
+	background-color: #6652ff;
+}
+h6 {
+  background-color: #8652ff;
+}
