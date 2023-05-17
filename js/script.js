@@ -14,34 +14,33 @@ function enterClicked () {
   
   let userNumber = parseInt(document.getElementById('userNumber').value);
   
-  //initialize counter and product
+  //initialize counter and factorial
 
-  let product = 0;
+  let factorial = 1;
 
 
   let counter =  1;
 
-  //Statement for 1 and 0
-
-  if (userNumber == 0 || userNumber == 1){
-    message = message + userNumber + "=" + counter
-  }
+    
 
   //statement for the do while loop
   do {
     
-    //calculation for the loop
-    message = message + counter + " x " 
+   //factorial calculation
+    factorial = factorial * counter
 
     //increment counter
     counter++
 
-    //product calculation
-    product = counter * counter
-  } while (counter > userNumber)
+  } while (counter <= userNumber)
+  
+  //Message if user enters nothing 
 
-  if (counter == userNumber){
-     message = message + counter + " = " + product
+  if (userNumber >= 0){
+    message = message + "The Factorial of " + userNumber + " is " + factorial;
+  }
+  else {
+     message = "Please Enter a Number"
   }
   
   // Display Results back to User
